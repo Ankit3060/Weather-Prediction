@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <form action="/" method="post">
-        <label for="cityInput"> City Name : </label>
-        <input id="cityInput" type="text" name="cityName">
-        <button type="submit">Go</button>
-    </form>
+<body class="bg-gray-300 relative">
+    <!-- Main div  -->
+    <div class=" bg-slate-200 flex flex-row  items-center mt-10 mb-10 mx-auto w-10/12 max-w-[1080px]">
+        <!-- Left side -->
+        <div class="ml-10">
+            <img src="images/cloudy.png" class="w-14 ml-5 -mt-[2.75rem]" alt="">
+            <h1 class="text-2xl font-serif ml-24 -mt-[2rem]">
+                Weather App
+            </h1>
+            <img src="images/season-bd61c78d.png" class="w-20 ml-[18rem] -mt-[4rem]" alt="">    
+            <h1 class="text-5xl ml-20 mt-10">Weather & Forecast Application</h1>
+            <p class="ml-20 mt-5">Check your city weather by simply entering your city name <br> Ex: Visakhapatnam </p>
+            <h1 class="ml-20 mt-5 italic text-blue-400">Enter your City Name :</h1>
+            <form class="bg-center ml-20 mt-4"  action="/" method="post">
+                <label for="cityInput"> </label>
+                <input id="cityInput" class="text-red-500" type="text" name="cityName"><br>
+                <button type="submit" class="mt-4 text-black py-[7px] px-[10px] rounded bg-cyan-500 hover:bg-cyan-300 ">Check now</button>
+            </form>
+        </div>
+        <!-- Right side  -->
+        <div class="">
+            <img src="images/right section-27edaac1.png" class="ml-[14rem] pl-0 mr-[3rem] w-[28rem] max-w-[1080px]" alt="">
+
+        </div>
+
+    </div>
+
 </body>
 </html>
